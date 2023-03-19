@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Load three.js -->
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+    
+    <!-- GPU backend -->
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+    <!-- CPU backend -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-cpu"></script> -->
+    <!-- WASM backend -->
+    <!-- <script src="https://unpkg.com/@tensorflow/tfjs-backend-wasm@2.1.0/dist/tf-backend-wasm.js"></script> -->
+    
+    <script defer src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+    <script defer src="./src/app.js"></script>
+    <script defer src="./src/index.js"></script>
+</head>
+
+<body>
+    <h1>I LOVE YOU (ILY) POSE TRAINER</h1>
+    <img src="https://media.japanesewithanime.com/uploads/ILY-hand-sign-diagram.png">
+    <div id="container">
+        <canvas id="output" ></canvas>
+        <video id="video" playsinline ></video>
+    </div>
+    <h2>Train me to love</h2>
+    <div id="array">I = Pinky, L = L Index and Thumb, Y = Thumb and Pinky (Shaka sign)</div>
+
+    <div class="btn-group">
+    <button id="i">I</button>
+    <button id="l">L</button>
+    <button id="y">Y</button>
+    </div>
+    <button id="guess">guess</button>
+    <h1 id="prediction">You are posing...</h1>
+</body>

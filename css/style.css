@@ -1,0 +1,80 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: url("https://cdn.discordapp.com/attachments/947669778590470167/1087073813092646942/index.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: lightpink;
+    overflow: hidden;
+    /* centered column with flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    background-color: hotpink;
+    color: #3c3d4b;
+}
+
+#array {
+    background-color: rgb(3, 2, 17);
+    color: #73ff00;
+    font-family: monospace;
+    min-height: 20px;
+    width: 720px;
+    word-wrap: break-word;
+}
+
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+button {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fc6495;
+    border: 1px solid #64283b;
+    color: white;
+    padding: 8px 12px;
+    margin: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5533ec;
+    color: white;
+}
+
+.btn-group button {
+    background-color: #fc6495;
+    border: 1px solid #64283b;
+    color: white;
+    padding: 10px 24px;
+    float: left;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.btn-group button:hover {
+    background-color: #5533ec;
+}
